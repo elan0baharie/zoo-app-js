@@ -5,7 +5,7 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
   <ul>
-    <li *ngFor="let currentAnimal of childAnimalList">{{currentAnimal.Name}}, {{currentAnimal.Species}} <button class="btn btn-default"  (click)="editButton(currentAnimal)">Edit</button></li>
+    <li *ngFor="let currentAnimal of childAnimalList">{{currentAnimal.Name}}, {{currentAnimal.Species}}, {{currentAnimal.Sex}} - Located in : {{currentAnimal.Location}} in Exhibit: {{currentAnimal.Exhibit}}  <button class="btn btn-default" (click)="editButton(currentAnimal)">Edit</button></li>
   </ul>
   `
 })
