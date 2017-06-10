@@ -4,13 +4,14 @@ import { AppComponent }   from './app.component';
 import { FormsModule }  from '@angular/forms';
 import { AnimalListComponent }  from './animal-list.component';
 import { EditAnimalComponent } from './edit-animal.component';
+import { NewAnimalComponent } from './new-animal.component';
 import { ZooHead } from './zoo-header.component';
 
 @NgModule({
   imports: [ BrowserModule,
             FormsModule ],
   declarations: [ AppComponent,
-                  AnimalListComponent, ZooHead, EditAnimalComponent],
+                  AnimalListComponent, ZooHead, EditAnimalComponent, NewAnimalComponent],
   bootstrap:    [ AppComponent ]
 })
 

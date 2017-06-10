@@ -4,10 +4,11 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'app-root',
   template: `
-  <div class="container">
+  <div class="row">
     <zoo-header></zoo-header>
     <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
     <edit-animal [childSelectedAnimal]="selectedAnimal" (finishedEditingSender)="finishedEditing()"></edit-animal>
+    <new-animal></new-animal>
   </div>
   `
 })
