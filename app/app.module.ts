@@ -6,12 +6,14 @@ import { AnimalListComponent }  from './animal-list.component';
 import { EditAnimalComponent } from './edit-animal.component';
 import { NewAnimalComponent } from './new-animal.component';
 import { ZooHead } from './zoo-header.component';
+import { AgePipe } from './age.pipe';
+import { DietPipe } from './diet.pipe';
 
 @NgModule({
   imports: [ BrowserModule,
             FormsModule ],
   declarations: [ AppComponent,
-                  AnimalListComponent, ZooHead, EditAnimalComponent, NewAnimalComponent],
+                  AnimalListComponent, ZooHead, EditAnimalComponent, NewAnimalComponent, AgePipe, DietPipe],
   bootstrap:    [ AppComponent ]
 })
 

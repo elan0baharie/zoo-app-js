@@ -4,7 +4,7 @@ import { Component, Input, Output } from '@angular/core';
   selector: 'zoo-header',
   template: `
     <div class="jumbotron">
-      <h3>Stuff</h3>
+      <h1 class="headTxt"><strong>ZooPark Animal Tracker</strong></h1>
     </div>
   `
 })
